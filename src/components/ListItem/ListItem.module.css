@@ -1,0 +1,52 @@
+.container {
+  padding: 24px;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 16px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divBtn {
+  display: flex;
+  gap: 16px;
+}
+
+.divItem {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.tittle {
+  font-size: 16px;
+  text-align: start;
+}
+
+.checkbox {
+  display: none; /* Ховаємо стандартний чекбокс */
+}
+
+.checkbox + label {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #19b0f0;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox:checked + label {
+  background-color: #19b0f0; /* Колір при виборі */
+}
+
+.checkbox:checked + label::after {
+  content: "✔"; /* Галочка */
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
