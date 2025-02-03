@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 import PartnerPage from "./page/PartnerPage";
-import HomePage from "./page/homePage";
+import HomePage from "./page/HomePage";
 
 function App() {
   return (
